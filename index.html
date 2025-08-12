@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Libris</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/modal.css">
+</head>
+<header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <a href="../index.html"><img src="../../assets/images/logo.png" alt="Logo" /></a>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./pages/about.html">Sobre Nosotros</a></li>
+                    <li><a href="./pages/contacte.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<body>
+    <div class="container">
+            <!--Second Header -->
+            <div class="firstheader">
+                <h1>UN SOFÁ, UN BUEN LIBRO, Y TÚ.</h1>
+                <p>Descubre libros populares y trending de OpenLibrary</p>
+            </div>
+        </div>
+
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" placeholder="Buscar libros..." id="searchInput" />
+            <button class="search-btn" id="searchBtn">🔍</button>
+        </div>
+    
+        <section>
+            <div class="category-filters">
+            <button class="filter-btn" data-category="trending">Trending</button>
+            <button class="filter-btn" data-category="fiction">Ficción</button>
+            <button class="filter-btn" data-category="science">Ciencia</button>
+            <button class="filter-btn" data-category="history">Historia</button>
+            <button class="filter-btn" data-category="philosophy">Filosofía</button>
+        </div>
+        </section>
+
+    <main class="main-container">
+        <div id="loading" class="loading" style="display: none;">
+            Cargando libros...
+        </div>
+        <div id="error" class="error" style="display: none;">
+            Error al cargar los libros. Por favor, intenta de nuevo.
+        </div>
+        <div id="booksContainer" class="books-grid"></div>
+        <div class="pagination" id="pagination" style="display: none;">
+            <button id="prevBtn">« Anterior</button>
+            <div class="page-info" id="pageInfo"></div>
+            <button id="nextBtn">Siguiente »</button>
+        </div>
+    </main>
+
+     <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Libris - Bookstore</h3>
+                <p>Paseo de la zona Franca 10</p>
+                <p>+53 123-456-789</p>
+                <p>info@libris.com</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Tienda</h3>
+                <a href="#faq">FAQ</a>
+                <a href="#envios">Envío y devoluciones</a>
+                <a href="#politicas">Políticas de la tienda</a>
+                
+            </div>
+
+            <div class="footer-section">
+                <h3>Sociales</h3>
+                <a href="#facebook">Facebook</a>
+                <a href="#twitter">Twitter</a>
+                <a href="#instagram">Instagram</a>
+                
+            </div>
+
+            <div class="footer-section">
+                <h3>Entérate lo primero</h3>
+                <p>Suscríbete a nuestro boletín</p>
+                <div class="newsletter">
+                    <input type="email" placeholder="Ingresa tu email aquí">
+                    <button onclick="subscribe()">Suscribirse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer-credits">
+    <p>2025. Desarrollado por 
+        <a href="https://www.linkedin.com/in/ana-lucia-silva-cordoba" target="_blank" rel="noopener noreferrer">
+            Ana Lucía Silva Córdoba
+        </a>
+    </p>
+    <p>Este sitio web no usa ninguna cookie y no recoge ningún tipo de dato.</p>
+</footer>
+    <script type="module" src="./js/main.js"></script>
+    <script src="./controller/pagination.js"></script>
+    <script src="./controller/modal.js"></script>
+</body>
+</html>

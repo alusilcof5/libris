@@ -1,0 +1,125 @@
+<!-- <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Libris</title>
+    <link rel="icon" type="image/png" href="./assets/images/logo.png" />
+    <link rel="stylesheet" href="../css/modal.css">
+</head>
+<body>
+     Tu contenido principal va aquí 
+    
+     Modal FAQ 
+    <div id="faqModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Preguntas Frecuentes (FAQ)</h2>
+                <button class="close" onclick="closeModal('faqModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3>¿Cómo puedo realizar una compra?</h3>
+                <p>Navega por nuestro catálogo, selecciona los libros que desees y agrégalos al carrito. Luego procede al checkout para completar tu pedido.</p>
+                
+                <h3>¿Qué métodos de pago aceptan?</h3>
+                <p>Aceptamos tarjetas de crédito y débito (Visa, Mastercard, American Express), PayPal y transferencias bancarias.</p>
+                
+                <h3>¿Cuánto tiempo tarda la entrega?</h3>
+                <p>Las entregas estándar tardan entre 3-5 días hábiles. Ofrecemos envío express para entregas en 1-2 días hábiles.</p>
+                
+                <h3>¿Puedo devolver un libro?</h3>
+                <p>Sí, aceptamos devoluciones dentro de los 30 días posteriores a la compra, siempre que el libro esté en perfectas condiciones.</p>
+                
+                <h3>¿Tienen libros digitales?</h3>
+                <p>Actualmente nos especializamos en libros físicos, pero estamos trabajando en incluir una sección de ebooks próximamente.</p>
+                
+                <div class="info-box">
+                    <p><strong>¿No encontraste lo que buscabas?</strong><br>
+                    Contáctanos directamente y te ayudaremos a encontrar el libro perfecto para ti.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="shippingModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Envío y Devoluciones</h2>
+                <button class="close" onclick="closeModal('shippingModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3>📦 Opciones de Envío</h3>
+                <ul>
+                    <li><strong>Envío Estándar (Gratis):</strong> 3-5 días hábiles para pedidos superiores a €25</li>
+                    <li><strong>Envío Express:</strong> 1-2 días hábiles por €5.99</li>
+                    <li><strong>Recogida en Tienda:</strong> Disponible sin costo adicional</li>
+                </ul>
+
+                <div class="info-box">
+                    <p><strong>Zona de Cobertura:</strong> Realizamos envíos a toda España peninsular, Baleares y Canarias. Para envíos internacionales, consulta con nuestro equipo.</p>
+                </div>
+
+                <h3>📋 Proceso de Envío</h3>
+                <p>Una vez confirmado tu pedido, lo preparamos en 24-48 horas. Recibirás un email con el número de seguimiento para que puedas rastrear tu paquete.</p>
+
+                <h3>🔄 Política de Devoluciones</h3>
+                <ul>
+                    <li>Tienes <strong>30 días</strong> para devolver cualquier libro</li>
+                    <li>Los libros deben estar en <strong>perfectas condiciones</strong></li>
+                    <li>Conserva el embalaje original</li>
+                    <li>El reembolso se procesa en 5-7 días hábiles</li>
+                </ul>
+
+                <h3>💸 Costos de Devolución</h3>
+                <p>Las devoluciones son <strong>gratuitas</strong> si el libro llega dañado o hay un error en el pedido. En otros casos, los gastos de envío corren por cuenta del cliente.</p>
+
+                <div class="info-box">
+                    <p><strong>¿Necesitas ayuda?</strong><br>
+                    Contacta con nuestro servicio de atención al cliente en info@libris.com o +53 123-456-789</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="policiesModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Políticas de la Tienda</h2>
+                <button class="close" onclick="closeModal('policiesModal')">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3>🔒 Política de Privacidad</h3>
+                <p>En Libris respetamos tu privacidad. No compartimos tu información personal con terceros y utilizamos medidas de seguridad avanzadas para proteger tus datos.</p>
+
+                <h3>🛡️ Términos y Condiciones</h3>
+                <ul>
+                    <li>Los precios mostrados incluyen IVA</li>
+                    <li>Nos reservamos el derecho de cancelar pedidos en caso de errores de precio</li>
+                    <li>La disponibilidad de los libros está sujeta a stock</li>
+                    <li>Los pedidos se procesan de lunes a viernes</li>
+                </ul>
+
+                <h3>💳 Seguridad de Pagos</h3>
+                <p>Utilizamos conexiones SSL encriptadas para todas las transacciones. Tus datos de pago están protegidos y nunca almacenamos información de tarjetas de crédito.</p>
+
+                <h3>📚 Política de Calidad</h3>
+                <p>Garantizamos que todos nuestros libros están en excelentes condiciones. Si recibes un libro dañado, lo reemplazamos sin costo adicional.</p>
+
+                <h3>⚖️ Resolución de Disputas</h3>
+                <p>En caso de cualquier problema, nuestro equipo de atención al cliente trabajará contigo para encontrar una solución satisfactoria. Si no podemos resolver el asunto directamente, ofrecemos mediación a través de organismos de consumo.</p>
+
+                <div class="info-box">
+                    <p><strong>Última actualización:</strong> Enero 2025<br>
+                    <strong>Jurisdicción:</strong> Estas políticas se rigen por la legislación española.</p>
+                </div>
+
+                <h3>📞 Contacto para Políticas</h3>
+                <p>Para consultas específicas sobre nuestras políticas, puedes contactarnos en legal@libris.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../controller/modal.js"></script>
+ </body>
+</html>  -->
